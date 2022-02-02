@@ -13,7 +13,7 @@ with tqdm(total=1023) as prog_bar:
         prog_bar.update(1)
         try:
             sock = socket.socket()
-            sock.settimeout(0.02)
+            sock.settimeout(0.5)
             sock.connect((ipaddress, port))
             if True:
                 l_open.append(port)
