@@ -8,7 +8,7 @@ l_open = []
 
 with tqdm(total=1023) as prog_bar:
 
-    while port < 1024:
+    while port < 1023:
         port += 1
         prog_bar.update(1)
         try:
