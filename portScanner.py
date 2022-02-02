@@ -17,7 +17,6 @@ with tqdm(total=1023) as prog_bar:
             sock.connect((ipaddress, port))
             if True:
                 l_open.append(port)
-
         except:
             pass
 
