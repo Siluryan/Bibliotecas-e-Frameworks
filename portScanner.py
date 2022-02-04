@@ -25,6 +25,7 @@ def scan_port(ip_domain):
             except:
                 pass
 
+            
 print(' Welcome!\n \n Press (q) and confirm (enter) to exit\n')
 ipaddress = input(' Enter Target To Scan >>> ')
 
