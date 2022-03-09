@@ -15,10 +15,7 @@ if __name__ == '__main__':
     else:
         str_c = s
         str_v = s[1:len(s)]
-
-    print(str_v)
-    print(str_c)
-
+    
     for i in s:
         if i in vg:
             list_v.append(i)
