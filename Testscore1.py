@@ -11,6 +11,7 @@ if __name__ == '__main__':
 
     if first in vg:
         str_v = s
+        str_c = s[1:len(s)]
     else:
         str_c = s
         str_v = s[1:len(s)]
