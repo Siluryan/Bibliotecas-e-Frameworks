@@ -1,5 +1,7 @@
 Estudando o desenvolvimento de uma API completa e adicionando os links acessados e os testes realizados nesse processo.
 
+https://jtemporal.com/requirements-txt/
+
 requirements.txt
 
 aiofiles
