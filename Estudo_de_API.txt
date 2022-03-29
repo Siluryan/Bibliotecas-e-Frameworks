@@ -5,15 +5,3 @@ https://fastapi.tiangolo.com
 https://jtemporal.com/requirements-txt/
 
 https://pythonacademy.com.br/blog/domine-decorators-em-python
-
-requirements.txt
-
-
-
-def toprint(outrafun):
-  outrafun()
-
-@toprint
-def main():
-  print('Printou')
-  
