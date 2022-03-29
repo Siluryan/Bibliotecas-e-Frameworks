@@ -1,7 +1,0 @@
-Estudando o desenvolvimento de uma API completa e adicionando os links acessados e os testes realizados nesse processo.
-
-https://fastapi.tiangolo.com
-
-https://jtemporal.com/requirements-txt/
-
-https://pythonacademy.com.br/blog/domine-decorators-em-python
