@@ -1,10 +1,16 @@
+# EM MANUTENÇÃO!
+
 while True:
 
-	print('Bem Vinda(o), digite "exit" a qualquer momento para sair.\n')
+	print('Bem Vinda(o), digite "exit" a qualquer momento para sair.')
+	print('Use pontos ao invés de vírgulas para separar as casas decimais\n')
+
 	count = 1
 
 	try:
 		total_cursos = input('Total de cursos realizados: ')
+		print('\n')
+
 		if total_cursos == 'exit':
 			print('\nAté logo!')
 			break
@@ -12,26 +18,34 @@ while True:
 			total_cursos = eval(total_cursos)
 	
 	except NameError:
-		print('\nDigite os dados corretamente!\n')
+		print('Digite os dados corretamente!\n')
 		total_cursos = input('Total de cursos realizados: \n')	
-		
+
 	
 	while count <= int(total_cursos):
 		try:
-			nota = input(f'Insira a(s) nota(s) do curso {count}: ')
-			if type(eval(nota)) == type(int()):
-				print(f'A média do curso é: {eval(nota):.1f}\n')
+			nota = eval(input(f'Insira a(s) nota(s) do curso {count}: '))
+			if type(nota) == type(int()) or type(float()): 
+				print(f'A média do curso é: {nota:.1f}\n')
 				count += 1
 			else:
-				print(f'A média do curso é: {sum(eval(nota))/len(eval(nota)):.1f}\n')
+				nota = str(nota).replace(',','.')
+				nota = nota.split()
+				print(f'A média do curso é: {sum(nota)/len(nota):.1f}\n')
 				count += 1
 
-		except (NameError, TypeError):
+		except (NameError, TypeError, SyntaxError):
 			if nota == 'exit':
 				print('\nAté logo!')
 				break
 			else:
-				print('\nDigite os dados corretamente, ex: 10, 9, 8 !\n')
+				try:
+					nota = str(nota).replace(',','.')
+					nota = nota.split()
+					print(f'A média do curso é: {sum(nota)/len(nota):.1f}\n')
+					count += 1
+				except (NameError, TypeError, SyntaxError):
+					print('\nDigite os dados corretamente: 10, 9, 8.8\n')
 
 	if nota != 'exit':
 		print('Até logo!')
