@@ -1,2 +1,1 @@
-# Diversos
-Bibliotecas Python
+Estudos e testes de bibliotecas
