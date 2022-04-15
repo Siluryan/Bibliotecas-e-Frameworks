@@ -1,1 +1,1 @@
-**Estudos de bibliotecas Python**
+**Estudo de bibliotecas Python**
