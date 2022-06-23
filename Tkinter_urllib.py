@@ -15,7 +15,7 @@ download = urllib.request.urlopen('https://c.tenor.com/pw9ZsUdsEYgAAAAj/capoo-bl
 def convert_html(http):
 	data = Popen.communicate(Popen(['import','-w','0x02a00001','png:-'], stdout=PIPE))[0]
 	#encoding = http.headers.get_content_charset('utf-8')
-	#decode = html_resposta.decode(encoding)
+	#decode = http_resposta.decode(encoding)
 	fdata = http.read()
 	fdata = fdata.open(BytesIO(data))
 	return fdata
