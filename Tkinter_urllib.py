@@ -20,8 +20,8 @@ def convert_html(http):
 	fdata = fdata.open(BytesIO(data))
 	return fdata
 
-'''ainda preciso encontar um jeito de fazer a comunicação
-entre xwindow >>> tkinter'''
+#ainda preciso encontar um jeito de fazer a comunicação
+#entre xwindow >>> tkinter
 
 # cria o arquivo para colocar a imagem
 file = open("capoo-blue-cat.gif")
